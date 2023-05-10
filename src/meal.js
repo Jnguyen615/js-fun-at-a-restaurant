@@ -11,12 +11,26 @@ function createMenuItem(name, price, type) {
 }
 
 function addIngredients(ingredient, ingredients) {
+  if (!ingredients.includes(ingredient))
     ingredients.push(ingredient)
-   if (ingredients.includes(ingredient)) {
-    
-   }
 }
 
+function formatPrice(initialPrice) {
+  return `$${initialPrice}` 
+}
+
+function decreasePrice(decreasedPrice) {
+  decreasedPrice *= .9
+  return decreasedPrice
+}
+
+function createRecipe(title, ingredients, type) {
+  return {
+    title: title,
+    ingredients: ingredients,
+    type: type 
+  }
+}
 
 
 
@@ -24,9 +38,9 @@ module.exports = {
   nameMenuItem,
   createMenuItem,
   addIngredients,
-  // formatPrice,
-  // decreasePrice,
-  // createRecipe
+  formatPrice,
+  decreasePrice,
+  createRecipe
 }
 
 

@@ -26,11 +26,24 @@ function listItems(deliveryOrders) {
     return items
 }
       
+function searchOrder(deliveryOrders, item) {
+//  console.log(deliveryOrders)
+var whichOrder = false
+  for (var i = 0; i < deliveryOrders.length; i++) {
+    if (deliveryOrders[i].item === item) {
+      whichOrder = true
+    } 
+  }
+  return whichOrder
+}
+
+
+
 
     
 module.exports = {
   takeOrder,
   refundOrder,
   listItems,
-  // searchOrder
+  searchOrder
 }

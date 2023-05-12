@@ -32,8 +32,6 @@ function createRecipe(title, ingredients, type) {
   }
 }
 
-
-
 module.exports = {
   nameMenuItem,
   createMenuItem,

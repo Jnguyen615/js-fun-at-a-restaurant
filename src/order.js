@@ -13,18 +13,15 @@ function refundOrder(orderNumber, deliveryOrders) {
 }
 
 function listItems(deliveryOrders) {
-  var items = ''
-  var lastIndex =  deliveryOrders.length -1
+  var items = []
   for (var i = 0; i < deliveryOrders.length; i++) {
-    if (deliveryOrders[i] === deliveryOrders[lastIndex]) {
-      items += deliveryOrders[i].item 
-    } else {
-      items += deliveryOrders[i].item 
-      items += ', '
-    }
+    items.push(deliveryOrders[i].item)
   }
-    return items
+  var stringItems = items.join(', ')
+  return stringItems 
 }
+
+
       
 function searchOrder(deliveryOrders, item) {
 var whichOrder = false

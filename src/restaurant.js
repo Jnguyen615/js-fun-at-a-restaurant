@@ -24,7 +24,7 @@ function removeMenuItem (restaurant, item, orderType) {
       return `No one is eating our ${item} - it has been removed from the ${orderType} menu!`
       }
   } 
-      return `Sorry, we don\'t sell ${item}, try adding a new recipe!`
+      return `Sorry, we don't sell ${item}, try adding a new recipe!`
 }
       
 function checkForFood (restaurant, foodItem) {

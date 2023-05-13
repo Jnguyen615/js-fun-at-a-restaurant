@@ -16,8 +16,8 @@ function listItems(deliveryOrders) {
   var items = []
     for (var i = 0; i < deliveryOrders.length; i++) {
       items.push(deliveryOrders[i].item)
-  var stringItems = items.join(', ')
-  }
+    }
+    var stringItems = items.join(', ')
     return stringItems 
 }
 

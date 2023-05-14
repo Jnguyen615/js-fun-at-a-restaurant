@@ -10,11 +10,11 @@ function createRestaurant(name) {
 }
 
 function addMenuItem(restaurant, pizza) {
-  
   if (!restaurant.menus[pizza.type].includes(pizza)) {  
         restaurant.menus[pizza.type].push(pizza)
   }
 }      
+  
         
 function removeMenuItem (restaurant, item, orderType) {
   var menu = restaurant.menus[orderType]

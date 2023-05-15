@@ -11,20 +11,19 @@ function createRestaurant(name) {
 
 function addMenuItem(restaurant, pizza) {
   if (!restaurant.menus[pizza.type].includes(pizza)) {  
-        restaurant.menus[pizza.type].push(pizza)
+      restaurant.menus[pizza.type].push(pizza)
   }
 }      
   
-        
 function removeMenuItem (restaurant, item, orderType) {
   var menu = restaurant.menus[orderType]
-  for (var i = 0; i < menu.length; i++) {
-    if (menu[i].name === item) {
-        menu.splice(i, 1)
-      return `No one is eating our ${item} - it has been removed from the ${orderType} menu!`
-      }
-  } 
-      return `Sorry, we don't sell ${item}, try adding a new recipe!`
+    for (var i = 0; i < menu.length; i++) {
+      if (menu[i].name === item) {
+          menu.splice(i, 1)
+        return `No one is eating our ${item} - it has been removed from the ${orderType} menu!`
+        }
+    } 
+        return `Sorry, we don't sell ${item}, try adding a new recipe!`
 }
       
 function checkForFood (restaurant, foodItem) {

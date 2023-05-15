@@ -4,9 +4,9 @@ function takeOrder (order, deliveryOrders) {
   }
 }
 
-function refundOrder(orderNumber, deliveryOrders) {
+function refundOrder(orderId, deliveryOrders) {
   for (var i = 0; i < deliveryOrders.length; i++){
-    if(deliveryOrders[i].orderNumber === orderNumber) {
+    if(deliveryOrders[i].orderId === orderId) {
       deliveryOrders.splice(i, 1)
     }
   }
@@ -17,18 +17,18 @@ function listItems(deliveryOrders) {
     for (var i = 0; i < deliveryOrders.length; i++) {
       items.push(deliveryOrders[i].item)
     }
-    var stringItems = items.join(', ')
-    return stringItems 
+    var itemList = items.join(', ')
+      return itemList 
 }
 
 function searchOrder(deliveryOrders, item) {
-var whichOrder = false
-  for (var i = 0; i < deliveryOrders.length; i++) {
-    if (deliveryOrders[i].item === item) {
-      whichOrder = true
-    } 
-  }
-  return whichOrder
+  var whichOrder = false
+    for (var i = 0; i < deliveryOrders.length; i++) {
+      if (deliveryOrders[i].item === item) {
+        whichOrder = true
+      } 
+    }
+      return whichOrder
 }
     
 module.exports = {

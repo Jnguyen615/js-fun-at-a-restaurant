@@ -1,5 +1,5 @@
 function nameMenuItem(menuItem) {
-    return `Delicious ${menuItem}`
+  return `Delicious ${menuItem}`
 }
 
 function createMenuItem(name, price, type) {
@@ -12,7 +12,7 @@ function createMenuItem(name, price, type) {
 
 function addIngredients(ingredient, ingredients) {
   if (!ingredients.includes(ingredient))
-    ingredients.push(ingredient)
+      ingredients.push(ingredient)
 }
 
 function formatPrice(initialPrice) {
@@ -21,7 +21,7 @@ function formatPrice(initialPrice) {
 
 function decreasePrice(decreasedPrice) {
   decreasedPrice *= .9
-  return decreasedPrice
+    return decreasedPrice
 }
 
 function createRecipe(title, ingredients, type) {

@@ -1,5 +1,5 @@
 function takeOrder (order, deliveryOrders) {
-  if(deliveryOrders.length < 3) {
+  if (deliveryOrders.length < 3) {
     deliveryOrders.push(order)
   }
 }

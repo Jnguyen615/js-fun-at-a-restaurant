@@ -10,9 +10,9 @@ function createMenuItem(name, price, type) {
   }
 }
 
-function addIngredients(ingredient, ingredients) {
-  if (!ingredients.includes(ingredient))
-      ingredients.push(ingredient)
+function addIngredients(ingredient, list) {
+  if (!list.includes(ingredient))
+      list.push(ingredient)
 }
 
 function formatPrice(initialPrice) {
